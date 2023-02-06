@@ -1,7 +1,7 @@
 # Swimming-Pool-Plant-Calculator
 
 # Project Description
-This program performs the necessary calculations to manually dose a swimming pool to ensure it has sufficent chemical levels adequate for disinfection and safe for bather comfort.
+This program performs the necessary calculations to manually dose a swimming pool to ensure it has chemical levels that are adequate for disinfection and safe for bather comfort.
 
 # Usage
 If your free chlorine is too low, this program helps you to identify how much chlorine you must dose to achieve ideal parameters.
