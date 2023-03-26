@@ -13,6 +13,6 @@ If your free chlorine is too low, this program helps you to identify how much ch
 - Target Free Chlorine Level (ppm)
 
 # Future Development
-- Specify the pool volume if you already know it.
+<s>- Specify the pool volume if you already know it.</s>
 - Decrease the pH of the pool if it is too high already
 - Menu option to modify either Cl or pH
