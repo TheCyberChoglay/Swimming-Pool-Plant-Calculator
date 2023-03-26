@@ -38,13 +38,19 @@ def Cl_Increase(): # To determine the amount of FC needed
 
 
 def VolumeCalculation(): # Calculates the Volume of the pool in Cubic Metres (m3)
- print("Volume Test:")
- Length = float(input("Pool Length in Meters: "))
- Width = float(input("Pool Width in Meters: "))
- Depth = float(input("Pool Depth in Meters: "))
  global Volume # Makes the Volume a global variable so we can use it in the calculation above
- Volume = Length * Width * Depth # Calculation to find the Volume of the pool in cubic meters
- print ("Total Volume = " + (str(Volume)) + " m3") # Prints the total volume of the pool
+ UserInput = input("Do you know the pool volume? (Yes/No): ") # Question to get a user input to lead to two possible outcomes of the subroutine
+ if UserInput == "Yes": # If the user types Yes
+     UserInput2 = float(input("Pool Volume in m3: ")) # Asks the user for the volume of the pool in m3
+     Volume = UserInput2 # Assigns the userinput value to the volume of the pool
+     print ("Total Volume = " + (str(Volume)) + " m3") # Prints the total volume of the pool
+ elif UserInput == "No": # If the user types No
+   print("Volume Calculation:") #  To make it clear that we are calculating the volume of the pool 
+   Length = float(input("Pool Length in Meters: "))
+   Width = float(input("Pool Width in Meters: "))
+   Depth = float(input("Pool Depth in Meters: "))
+   Volume = Length * Width * Depth # Calculation to find the Volume of the pool in cubic meters
+   print ("Total Volume = " + (str(Volume)) + " m3") # Prints the total volume of the pool
 
 def Concentration(): # Figuring out the concentration of Free Chlorine (e.g. 65% = 65% Active Free Chlorine)
  global Strength # Makes the concentration of chlorine a global variable to be used in the calculation in ManualDosing()
